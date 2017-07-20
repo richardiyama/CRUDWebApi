@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+  <br /><br />
+    <a href="@Url.Action("Create","Product")"> Add New Product</a>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Photo</th>
+            <th>Creation Date</th>
+            <th>Option</th>
+
+        </tr>
+
+        @foreach (var p in ViewBag.listProducts)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <td>@p.Price</td>
+                <td>@p.Quantity</td>
+                <td>@p.Photo</td>
+                <td>@p.CreationDate.ToString("dd/MM/yyy")</td>
+                <td>
+                <a onclick="return confirm('Are you sure?')" href="@Url.Action("Delete","Product", new {id = p.Id })">Delete</a>
+                |
+                <a  href="@Url.Action("Edit","Product", new {id = p.Id })">Edit</a></td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
