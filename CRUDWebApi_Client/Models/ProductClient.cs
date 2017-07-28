@@ -25,6 +25,7 @@ namespace CRUDWebApi_Client.Models
 
                 HttpResponseMessage response = client.GetAsync("product").Result;
 
+                
                 if (response.IsSuccessStatusCode)
                 {
 
