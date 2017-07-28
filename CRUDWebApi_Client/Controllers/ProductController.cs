@@ -18,7 +18,8 @@ namespace CRUDWebApi_Client.Controllers
             return View();
         }
 
-        [HttpGet]
+       
+       [HttpGet]
         public ActionResult Create()
         {
             return View();
