@@ -14,6 +14,7 @@ namespace CRUDWebApi_Client.Models
         [Display(Name = "Name")]
         public string Name { get; set; }
 
+        
         [Display(Name = "Price")]
         public decimal Price { get; set; }
 
