@@ -43,6 +43,7 @@ namespace CRUDWebApi_Client.Models
 
         public Product Find(int id)
         {
+           
             try
             {
                 HttpClient client = new HttpClient();
