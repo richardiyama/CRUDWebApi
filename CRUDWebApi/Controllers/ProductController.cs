@@ -22,6 +22,7 @@ namespace CRUDWebApi.Controllers
             return db.Products;
         }
 
+        
         // GET: api/Product/5
         [ResponseType(typeof(Product))]
         public IHttpActionResult GetProduct(int id)
