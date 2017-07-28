@@ -5,6 +5,7 @@ using System.Web;
 
 namespace CRUDWebApi.Models
 {
+    
     public class Product
     {
         public int ID { get; set; }
@@ -14,5 +15,6 @@ namespace CRUDWebApi.Models
         public Nullable <System.DateTime> CreationDate { get; set; }
         public string Photo { get; set; }
 
+   
     }
 }
