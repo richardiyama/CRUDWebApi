@@ -6,6 +6,7 @@ using System.Web;
 
 namespace CRUDWebApi_Client.ViewModels
 {
+    
     public class ProductViewModel
     {
         public Product Product { get; set; }
